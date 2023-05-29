@@ -12,7 +12,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .main {
@@ -54,4 +53,114 @@ bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+buttonn:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.images {
+    width: 50%;
+    padding-bottom: 2%;
+    position: relative;
+}
+
+.imgone {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-x: -60px;
+    background-position-y: 70px;
+    background-size: 85%;
+    position: absolute;
+    z-index: 1;
+}
+
+.imgone img {
+    position: absolute;
+    top: 35%;
+    left: -26%;
+}
+
+.imgtwo {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 195px;
+    background-position-x: 280px;
+    background-position-y: 575px;
+    position: absolute;
+}
+
+.imgtwo img {
+    display: none;
+}
+
+.imgArrow {
+    transform: rotate(180deg);
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 1440px) {
+    .imgone {
+        background-size: 102%;
+    }
+
+    .imgtwo {
+        background-size: 200%;
+        background-position-y: -180px;
+        background-position-x: -395px;
+    }
+
+    .imgone img {
+        top: 40%;
+        left: -38px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .main{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .main h1 {
+        text-align: center;
+    }
+
+    .faq {
+        margin-top: 40%;
+        margin-bottom: 15%;
+        width: 87%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .imgone img {
+        display: none;
+    }
+    .imgone {
+        background-image: none;
+    }
+
+    .imgtwo img {
+        display: inline-block;
+        position: absolute;
+        top: 105px;
+        right: -30%;
+    }
+
+    .imgthree img {
+        display: inline-block;
+        position: absolute;
+        right: -30%;
+    }
 }
