@@ -1,18 +1,18 @@
 const buttonOpen = document.querySelectorAll('#button');
 const answer = document.querySelectorAll(".answer");
-const imgArrow = document.querySelectorAll('.img');
+const imgarrow = document.querySelectorAll('.img');
 const boldText = document.querySelectorAll('.boldText');
 const buttonArray = new Array(buttonOpen.length);
 
 function openClose (place) {
     if(buttonArray[place]==1){
         answer[place].classList.add('answer');
-        imgArrow[place].classList.remove('imgArrow');
+        imgarrow[place].classList.remove('imgarrow');
         boldText[place].classList.remove('bold');
         buttonArray[place]=0;
     }else{
         answer[place].classList.remove("answer");
-        imgArrow[place].classList.add('imgArrow');
+        imgarrow[place].classList.add('imgarrow');
         boldText[place].classList.add('bold');
         buttonArray[place]= 1;
     }
