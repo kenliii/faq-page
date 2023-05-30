@@ -1,5 +1,5 @@
 const buttonOpen = document.querySelectorAll('#button');
-const answer = document.querySelectorAll(".answer");
+const answer = document.querySelectorAll('.answer');
 const imgarrow = document.querySelectorAll('.img');
 const boldText = document.querySelectorAll('.boldText');
 const buttonArray = new Array(buttonOpen.length);
