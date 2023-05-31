@@ -44,6 +44,10 @@ body {
     margin-bottom: 2%;
 }
 
+.answer {
+    display: none;
+}
+
 button {
     outline: none;
     border: none;
